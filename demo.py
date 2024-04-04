@@ -20,3 +20,28 @@ def decrypt(input: str, key: str):
         return output
     except Exception as e:
         return False
+
+
+while True:
+    user_input = input("Enter 'e' to encrypt or 'd' to decrypt: ")
+
+    if user_input == "e":
+        input_text = input("Enter text to encrypt: ")
+        encrypted_text, key = encrypt(input_text)
+        if not encrypted_text:
+            print("Error encrypting text")
+            continue
+        print(f"Encrypted text: {encrypted_text}")
+        print(f"Key: {key}")
+
+    elif user_input == "d":
+        input_text = input("Enter text to decrypt: ")
+        key = input("Enter key: ")
+        decrypted_text = decrypt(input_text, key)
+        if not decrypted_text:
+            print("Error decrypting text")
+            continue
+        print(f"Decrypted text: {decrypted_text}")
+
+    else:
+        break
