@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezku Cipher</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <meta name="description" content="Ezku Cipher is "">
+    <meta name="keywords" content="cipher, encryption, decryption, ezku, ezku cipher">
+    <meta name="author" content="Lubin Pappalardo">
+</head>
+<body>
+    <nav id="nav">
+        <p id="mode-toggle-encrypt" class="active">encrypt</p>
+        <p id="mode-toggle-separator">/</p>
+        <p id="mode-toggle-decrypt">decrypt</p>
+    </nav>
+
+    <main>
+        <div id="left-column" class="column">
+            <section id="input-section">
+                <textarea id="input" title="Type here..." placeholder="Type here..."></textarea>
+                <p class='section-alt'>// text to encrypt</p>
+            </section>
+        </div>
+        <div id="separator-line-column"></div>
+        <div id="right-column" class='column'>
+            <section id="output-section">
+                <textarea id="output" title="output" placeholder="f%-5D^/♦↨§y►" readonly></textarea>
+                <p class='section-alt'>// output</p>
+                <p class='section-copy'>copy</p>
+            </section>
+            <div id="separator-line-row"></div>
+            <section id="key-section">
+                <textarea id="key" title="key" placeholder="2\]Pd6Jvr;W>" readonly></textarea>
+                <p class='section-alt'>// key</p>
+                <p class='section-copy'>copy</p>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer">
+        Ezku Cipher - Lubin Pappalardo, 2024
+    </footer>
+</body>
+</html>
